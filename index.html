@@ -68,39 +68,115 @@
         If your function takes more than one argument, simply separate them with a comma inside of the parentheses. <br>
         You can refer to the "addTwoNumbers" function at the top of this page for an example.
 
-        <script type="text/JavaScript">
-            1. Day of the Week
+        <script type="text/javaScript">
 
-            Create a program that takes a number representing a day (1 for Monday, 2 for Tuesday, etc.) 
-            and logs to the console the corresponding day of the week using a switch statement.
+           // 1. Day of the Week
+        
+            let myday = 100
 
+            switch (myday) {
+                case 1:
+                  console.log("Monday")  
+                    break;
+                case 2:
+                  console.log("Tuesday")  
+                    break;
+                case 3:
+                  console.log("Wednesday")  
+                    break;
+                case 4:
+                  console.log("Thursday")  
+                    break;
+                case 5:
+                  console.log("Friday")  
+                    break;
+                case 6:
+                  console.log("Saturday")  
+                    break;
+                case 7:
+                  console.log("Sunday")  
+                    break;
+                default:
+                    console.log("Wrong Input")
+                    break;
+            }
 
-            2. Eligibility to Vote
+            // 2. Eligibility to Vote
 
-            Create a program that checks if a person is eligible to vote based on their age. 
-            The program should prompt the user to enter their age and then display a message indicating whether they are eligible to vote or not.
+            alert("VOTER AGE REGISTRY CENTER")
+            
+            let voterAge = prompt("What is your age: ?")
 
-            3. Grade Calculator
+            if (voterAge >= 1 && voterAge <= 17) {
+                alert("Your'e NOT eligible to vote.")
+            }
+            else if (voterAge >= 18) {
+                alert("You're eligible to vote")
+            } else {
+                alert("Wrong Input")
+            }
 
-            Build a grade calculator that takes student's score as input (a number between 0 and 100) 
-            and alerts their grade based on the following criteria using conditional statements.
+            // 3. Grade Calculator
 
-            - If the score is between 90 and 100, the grade is "A."
-            - If the score is between 80 and 89, the grade is "B."
-            - If the score is between 70 and 79, the grade is "C."
-            - If the score is between 60 and 69, the grade is "D."
-            - If the score is below 60, the grade is "F."
+            alert("CHECK YOUR GRADE HERE")
+            
+            let studentAverage = prompt("Please enter your test Average: ?")
 
-            4. Driving License Eligibility
+            if (studentAverage >= 90 && studentAverage <= 100) {
+                alert("Your grade is: A")
+            }
+            else if (studentAverage >= 80 && studentAverage <= 89) {
+                alert("Your grade is: B")
+            }
+            else if (studentAverage >= 70 && studentAverage <= 79) {
+                alert("Your grade is: C")
+            }
+            else if (studentAverage >= 60 && studentAverage <= 69) {
+                alert("Your grade is: D")
+            }
+            else if (studentAverage >= 1 && studentAverage <= 60) {
+                alert("Your gradr is: F")
+            } else {
+                alert("Wrong Input")
+            }
 
-            Create a program that checks if a person is eligible for a 
-            driver's license based on their age. The program should prompt the user to enter their age, and then display a message indicating whether they are eligible for a driver's license or not.
+            // 4. Driving License Eligibility
 
-            5. Age Group Classifier
+            alert("DRIVER LESSSON AGE CHECK")
+            
+            let driverAge = prompt("What is your age: ")
 
-            Write a program that classifies a person into different age groups based on 
-            their age. The program should prompt the user to enter their age and then display 
-            a message indicating which age group they belong to (e.g., child, teenager, adult, senior). Use a Switch statement
+            if (driverAge >= 1 && driverAge <= 17) {
+                alert("Your'e NOT eligible to to have a DRIVER LESSON.")
+            }
+            else if (driverAge >= 18) {
+                alert("You're eligible to have a DRIVER LESSON")
+            } else {
+                alert("Wrong Input")
+            }
+
+            // 5. Age Group Classifier
+
+            // alert("AGE GROUP CLASSIFIER")
+            // let checkAge = prompt("What is your age: ")
+
+            // switch (checkAge) {
+            //     case (>= 1 && <= 11):
+            //     console.log("Your are a CHILD")  
+            //         break;
+            //     case (>= 12 && <= 18):
+            //     console.log("You are a TEENAGER")  
+            //         break;
+            //     case (>= 19 && <= 45):
+            //     console.log("You are a ADULT")  
+            //         break;
+            //     case (>= 46):
+            //     console.log("Your are a SENIOR")  
+            //         break;
+            //     default:
+            //         console.log("Wrong Input")
+            //         break;
+            // }
         </script>
     </body>
 </html>
