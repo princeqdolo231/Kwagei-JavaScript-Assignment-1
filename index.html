@@ -157,26 +157,26 @@
 
             // 5. Age Group Classifier
 
-            // alert("AGE GROUP CLASSIFIER")
-            // let checkAge = prompt("What is your age: ")
+            alert("AGE GROUP CLASSIFIER")
+            const checkAge = prompt("What is your age: ")
 
-            // switch (checkAge) {
-            //     case (>= 1 && <= 11):
-            //     console.log("Your are a CHILD")  
-            //         break;
-            //     case (>= 12 && <= 18):
-            //     console.log("You are a TEENAGER")  
-            //         break;
-            //     case (>= 19 && <= 45):
-            //     console.log("You are a ADULT")  
-            //         break;
-            //     case (>= 46):
-            //     console.log("Your are a SENIOR")  
-            //         break;
-            //     default:
-            //         console.log("Wrong Input")
-            //         break;
-            // }
+            switch (true) {
+                case checkAge >= 1 && checkAge <= 11:
+                alert("Your are a CHILD")  
+                    break;
+                case checkAge >= 12 && checkAge <= 18:
+                alert("You are a TEENAGER")  
+                    break;
+                case checkAge>= 19 && checkAge <= 45:
+                alert("You are a ADULT")  
+                    break;
+                case checkAge >= 46:
+                alert("Your are a SENIOR")  
+                    break;
+                default:
+                    alert("Wrong Input")
+                    break;
+            }
         </script>
     </body>
 </html>
